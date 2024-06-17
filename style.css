@@ -1,0 +1,347 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    /* margin: 5px; */
+    overflow: hidden;
+    display: flex;
+    font-family: "Rubik", sans-serif;
+}
+
+p{
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.phone{
+    width: 20%;
+    position: absolute;
+    left: 35%;
+    top: 15%;
+    border-radius: 24px;
+    margin: 10px;
+    justify-self: center;
+    border: 4px solid rgb(243, 243, 243);
+    overflow: hidden;
+    box-shadow:2px 5px 8px #e1dfdf;
+    animation: move_right 2s ease-in-out;
+}
+
+.screen{ 
+    width: 100%;
+    height: 100%;
+    background-color:hsl(270, 20%, 96%);
+    padding: 10px;
+    border-radius: 0 0 20px 20px;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.notch{
+    width: 30%;
+    height: 10%;
+    padding: 10px;
+    position: absolute;
+    top: -13%;
+    left: 22%;
+    /* margin: auto; */
+    border-radius: 10px;
+    background-color: white;
+    transform: translate(50%, 60%); 
+  background-color: rgb(255, 255, 255);
+}
+
+
+
+nav{
+    padding-top: 10px;
+    background: linear-gradient(90deg, hsl(293, 100%, 63%),  hsl(264, 100%, 61%)); 
+    /* transform: translate(0, 10px); */
+    padding: 10px;
+    border-radius: 20px 20px 0 0;
+    margin-bottom: 0px;
+    width: 100%;
+    height: 20%;
+}
+
+nav img{
+    border-radius: 100%;
+    width: 50px;
+    background-color: #fff;
+    padding: 1px;
+}
+
+#username{
+    color: white;
+    font-size: 18px;
+}
+#user_status{
+    color: #fff;
+    font-size: 11px;
+
+}
+
+.textholder{
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+
+}
+
+.topnavitemholder{
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    position: relative;
+    top: 6px;
+    left: 20px;
+}
+
+.receive p{
+    background-color:rgba(226, 164, 231, 0.315);
+    color: hsl(276, 55%, 52%);
+    padding: 8px;
+    width: calc(80%);
+    margin-bottom: 10px;
+    border-radius: 0 14px 14px 14px ;
+    text-align: justify;
+}
+
+
+.sent p{
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 0%);
+    padding: 8px;
+    width: calc(70%);
+    margin-bottom: 10px;
+    border-radius: 14px 0 14px 14px ;
+    text-align: justify;
+}
+
+
+
+
+.sent{
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    margin-top:10px;
+    margin-bottom: 10px ;
+}
+.sent:nth-child(4){
+    color: rebeccapurple;
+}
+
+.sent img{
+    float: right;
+    width: 17%;
+    margin-bottom: 8px;
+    border-radius: 12px;
+    margin-left: 4px;;
+    margin-right: 4px ;
+}
+
+.receive{
+    margin-left: 4px;;
+    margin-right: 4px ;
+}
+
+#prices p{
+    background: linear-gradient(90deg, hsl(264, 100%, 61%), hsl(293, 100%, 63%)); 
+    color: white;
+    align-items: center;
+    display: flex;
+}
+
+.price_text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 16px;
+}
+
+p span{
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+p input{
+    margin-right: 10px;
+}
+
+.Textboximage{
+    color: rgba(0,0,0, 0.5);
+    padding: 10px;
+    border-radius: 16px;
+    border: 0px;
+    width: calc(100%);
+    overflow: scroll;
+}
+
+.Textboximage:focus{
+    color: rgb(0, 0, 0);
+    font-weight: 300;
+}
+
+.type_message{
+    width:100% ;
+    height: 35.5px;
+    position: relative;
+}
+
+
+/* Arrow & purple button */
+.arrow{
+    
+    padding: 5px;
+    border:  3px solid white;
+    border-top: 3px;
+    border-right: 3px;
+    border-radius: 3px;
+    width: 5px;
+    transform: rotate(-135deg);
+    
+    position: relative;
+    left: calc(6px);
+    top: 7px;
+}
+
+.purple_shape{
+    background-color:hsl(271, 36%, 24%) ;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    border: 0px;
+    border-radius: 100%;
+    left: 85%;
+    bottom: 33px;
+}
+/* Text by the side */
+.secondarytext{
+    display: flex;
+    flex-direction: column;
+    width: calc(29%);   
+    position: absolute;
+    right: 9%;
+    bottom: 40%;
+    z-index: 1;
+    color: hsla(0, 0%, 0%, 0.496);
+    animation: move_left 2s ease-in-out;
+}
+
+.secondarytext p {
+   margin-top: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    /* text-align: justify; */
+}
+.secondarytext h1{
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin: 4px;
+    color: black;
+}
+
+
+
+
+.left_curved_box{
+    left: -5%;
+    width: 35vw;
+    height: 95vh;
+    border-radius: 0 0 35vw 35vw;
+    position: absolute;
+    background:linear-gradient(to top, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    animation: move_down 2s ease-in-out;
+
+}
+
+.left_curved_box_b{
+
+    width: 35vw;
+    height: 95vh;
+    border-radius: 35vw 35vw 0 0;
+    position: absolute;
+    left: 930px;
+    top: 250px;
+    z-index: 0;
+    background:linear-gradient(to top, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    opacity:5% ;
+    animation: move_up 2s ease-in-out;
+
+}
+
+/* Radio button */
+
+ /* THe circle outline */
+ .custom_radio_button{
+    width: 25px;
+    height: 25px;
+    border: 1px solid white;
+    
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom_radio_button:hover{
+    cursor: pointer;
+
+}
+
+/* Style for the span we havemade intowhat will show */
+.checkmark{
+    width: calc(100% - 4px);
+    height:calc(100% - 4px);
+    border-radius: 50%;
+    background-color:hsla(0, 0%, 100%, 0.792) ;
+    /* display: none; */
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/*Make the span you designed visible when the radio button is clicked */
+.custom_radio_button input:checked + .checkmark{
+    opacity: 1;
+}
+
+/* To hide the default radio button*/
+.custom_radio_button input{
+    display: none;
+}
+span.checkmark{
+    margin: 0;
+}
+
+/* Animations!!!!!!!!!!!!!! */
+
+@keyframes move_up {
+    from{
+        transform:translateY(100%) ;
+    }
+}
+
+@keyframes move_down {
+    from{
+        transform:translateY(-100%) ;
+    }
+}
+
+@keyframes move_left {
+    from{
+        transform:translateX(150%) ;
+    }
+}
+
+@keyframes move_right {
+    from{
+        transform:translateX(-400%) ;
+    }
+}
+
